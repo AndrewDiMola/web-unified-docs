@@ -1,0 +1,24 @@
+---
+page_title: Buildkite
+description: Learn how to integrate Buildkite with HashiCorp Vault for secure secrets management.
+---
+
+# Buildkite
+
+[Buildkite](https://buildkite.com/) supports a [Vault Secrets Plugin](https://github.com/buildkite-plugins/vault-secrets-buildkite-plugin) to authenticate with Vault.
+
+Different types of secrets are supported and exposed to your builds in appropriate ways:
+
+- Environment Variables for strings
+- `ssh-agent` for SSH Private Keys
+- `git-credential` via git's credential.helper
+
+By default, the plugin references `BUILDKITE_PLUGIN_VAULT_SECRETS_AUTH_SECRET_ENV (default: $VAULT_SECRET_ID)` for the `SecretID` in Vault.
+
+Resources:
+  - [HashiCorp Vault AppRole Auth Method](/vault/docs/auth/approle)
+  - [Buildkite Configuration Reference](https://buildkite.com/docs/pipelines/security/secrets/managing#using-a-secrets-storage-service)
+
+## Next steps
+
+In this section of [managing CI/CD secrets](/well-architected-framework/secure-systems/secure-applications/ci-cd-secrets), you learned about Buildkite and Vault integration. Buildkite and Vault integration is part of the [Secure systems pillar](/well-architected-framework/secure-systems).
