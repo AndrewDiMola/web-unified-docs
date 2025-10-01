@@ -322,6 +322,9 @@
               {
                 "title": "CircleCI",
                 "path": "secure-systems/secure-applications/ci-cd-secrets/circle-ci"
+              },            {
+                "title": "Buildkite",
+                "path": "secure-systems/secure-applications/ci-cd-secrets/buildkite"
               },
               {
                 "title": "TeamCity",
